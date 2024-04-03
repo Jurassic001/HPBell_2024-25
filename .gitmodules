@@ -1,3 +1,3 @@
 [submodule "AVR/AVRCode"]
-	path = AVR/AVRCode
+	path = AVR/AVR-2024
 	url = https://github.com/Jurassic001/AVR-2024
