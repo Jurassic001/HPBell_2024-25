@@ -1,37 +1,28 @@
 # HPBell_2024-25
 
-#### Feel free to come to me or your team captains with any questions you might have
+#### Feel free to come to me or your team captains with any questions/issues you might have
 
 ### First Time Setup:
 <!-- This is intended to be a foolproof guide, so excuse the wordiness/overexplaining in some parts -->
-If you already have Git, VSCode, and Python on your computer, skip to [Repository Setup](https://github.com/Jurassic001/HPBell_2024-25?tab=readme-ov-file#repository-setup)
+<!--
+###### If you already have Git, VSCode, and Python on your computer, skip to [Repository Setup](https://github.com/Jurassic001/HPBell_2024-25?tab=readme-ov-file#repository-setup)
+-->
 1. Create a GitHub acount
 2. Install [Git for Windows](https://git-scm.com/download/win)
 3. Install [Visual Studio Code](https://code.visualstudio.com/download)
-     - IMPORTANT: When installing VSCode, do NOT change the install location to anything other than the default
+    - IMPORTANT: When installing make sure to check the "Add to PATH" box.
 4. Install [Python for Windows](https://www.python.org/downloads/windows/)
-5. Add VSCode to your PATH variable
-    - Type "Enivroment Variables" into your Windows search bar
-    - Select "Edit the system enviroment variables"
-    - Click the "Enivroment Variables" button (Bottom right of the new window)
-    - Click PATH >> Edit >> New
-    - Paste this: <br/><br/>
-        ```
-        %USERPROFILE%\AppData\Local\Programs\Microsoft VS Code\bin
-        ```
-6. Run this command in the VSCode terminal to install Pip: <br/><br/>
-    ```
-    curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-    python get-pip.py
-    ```
-
-<br/>
+    - IMPORTANT: During installation check the "Install pip" & "Add Python to enviroment variables" boxes. Leave all other options as default.
+    
+    <br/>
 
 ### Repository Setup:
-1. Run this command to clone this repo with submodules (Needs testing):
-    <br/><br/>
-    ```bash
-    git clone --recurse-submodules git://github.com/Jurassic001/HPBell_2024-25
+1. Open the command prompt
+2. Run this command to download this repo and open it (Will take 5-10 minutes):
+
+    ```cmd
+    git clone --recurse-submodules git://github.com/Jurassic001/HPBell_2024-25 ~/Documents/VSCode/HPBell_2024-25
+    code Documents/VSCode/HPBell_2024-25
     ```
 <!--
 Do this on the VMC maybe:
@@ -43,7 +34,7 @@ git clone --recurse-submodules https://github.com/bellflight/AVR-2022 ~/AVR-2022
 ### Misc:
 Template command to add git submodules (repositories inside repositories) to a repository: 
 ```bash
-git submodule add <Repository URL> <Submodule directory location>
+git submodule add <Repository URL> <Submodule directory from root>
 ```
 <!-- 
 Example command: 
