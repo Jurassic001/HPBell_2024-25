@@ -28,11 +28,15 @@ If you already have Git, VSCode, and Python on your computer, skip to [Repositor
 <br/>
 
 ### Repository Setup:
-1. Run this command to clone the repo with submodules (Needs testing):
+1. Run this command to clone this repo with submodules (Needs testing):
     <br/><br/>
     ```bash
     git clone --recurse-submodules git://github.com/Jurassic001/HPBell_2024-25
     ```
+<!--
+Do this on the VMC maybe:
+git clone --recurse-submodules https://github.com/bellflight/AVR-2022 ~/AVR-2022
+-->
 
 <br/>
 
