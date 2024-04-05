@@ -3,9 +3,13 @@
 #### Feel free to come to me or your team captains with any questions/issues you might have
 
 ## To do
-- [x] Setup team repo with submodules
-- [ ] Create Dexi drone movement framework
-- [ ] Add more things to the to do list
+<!--
+Surround content with double tilde to cross out
+i.e. ~~<list item>~~
+-->
+- ~~Setup team repo with submodules~~
+- Create Dexi drone movement framework
+- Add more things to the to do list
 
 ## Setup
 ### First Timer Setup:
