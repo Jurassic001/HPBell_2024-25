@@ -2,7 +2,13 @@
 
 #### Feel free to come to me or your team captains with any questions/issues you might have
 
-### First Time Setup:
+## To do
+- [x] Setup team repo with submodules
+- [ ] Create Dexi drone movement framework
+- [ ] Add more things to the to do list
+
+## Setup
+### First Timer Setup:
 <!-- This is intended to be a foolproof guide, so excuse the wordiness/overexplaining in some parts -->
 1. Create a GitHub acount
 2. Install [Git for Windows](https://git-scm.com/download/win)
@@ -31,7 +37,7 @@ git clone --recurse-submodules https://github.com/bellflight/AVR-2022 ~/AVR-2022
 
 <br/>
 
-### Misc:
+## Misc:
 Template command to add git submodules (repositories inside repositories) to a repository:
 ```bash
 git submodule add <Repository URL> <Submodule directory from root>
