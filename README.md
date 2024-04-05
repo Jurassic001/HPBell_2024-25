@@ -32,12 +32,24 @@ git clone --recurse-submodules https://github.com/bellflight/AVR-2022 ~/AVR-2022
 <br/>
 
 ### Misc:
-Template command to add git submodules (repositories inside repositories) to a repository: 
+Template command to add git submodules (repositories inside repositories) to a repository:
 ```bash
 git submodule add <Repository URL> <Submodule directory from root>
 ```
-<!-- 
-Example command: 
+<!--
+Example command:
 git submodule add https://github.com/Jurassic001/AVR-2024 AVR\AVR-2024
 ^^^ This is the command I used to add the AVR-2024 repo to this repo (HPBell_2024-25) as a submodule
+-->
+
+<br/> Creating/updating requirements.txt:
+```bash
+pipreqs --force
+# It's likely that you'll have to venture deep into the VMC folder to get this command to run without error
+```
+<!--
+<br/> The next thing:
+```bash
+placeholder
+```
 -->
