@@ -4,9 +4,6 @@
 
 ### First Time Setup:
 <!-- This is intended to be a foolproof guide, so excuse the wordiness/overexplaining in some parts -->
-<!--
-###### If you already have Git, VSCode, and Python on your computer, skip to [Repository Setup](https://github.com/Jurassic001/HPBell_2024-25?tab=readme-ov-file#repository-setup)
--->
 1. Create a GitHub acount
 2. Install [Git for Windows](https://git-scm.com/download/win)
 3. Install [Visual Studio Code](https://code.visualstudio.com/download)
@@ -20,10 +17,13 @@
 1. Open the command prompt
 2. Run this command to download this repo and open it (Will take 5-10 minutes):
 
-    ```cmd
+    ```
     git clone --recurse-submodules git://github.com/Jurassic001/HPBell_2024-25 ~/Documents/VSCode/HPBell_2024-25
     code Documents/VSCode/HPBell_2024-25
     ```
+3. Once in VSCode, open and run `installReqs.py` to install required Python packages
+4. And you're ready to start contributing!
+    - If you intend to work on the AVR code, your setup process is far from over.
 <!--
 Do this on the VMC maybe:
 git clone --recurse-submodules https://github.com/bellflight/AVR-2022 ~/AVR-2022
@@ -44,12 +44,12 @@ git submodule add https://github.com/Jurassic001/AVR-2024 AVR\AVR-2024
 
 <br/> Creating/updating requirements.txt:
 ```bash
-pipreqs --force
-# It's likely that you'll have to venture deep into the VMC folder to get this command to run without error
+pipreqs --force --ignore AVR/AVR-2024
+# Ignores the AVR submodule which has its own requirements.txt files
 ```
 <!--
 <br/> The next thing:
-```bash
+```
 placeholder
 ```
 -->
