@@ -10,6 +10,7 @@ Surround content with double tilde to cross out
 i.e. ~~<list item>~~
 -->
 - ~~Setup team repo with submodules~~
+- ~~Add a "How to Use" section~~
 - Create Dexi drone movement framework
 - Add more things to the to do list
 
@@ -43,7 +44,25 @@ git clone --recurse-submodules https://github.com/bellflight/AVR-2022 ~/AVR-2022
 
 <br/>
 
-## Misc:
+## How to use
+
+### Making changes:
+1. Go to the Source Control tab on the left
+2. Stage your changes (Click the plus on all files that you worked on)
+3. Write a short sentence about the changes you made
+4. Press commit
+5. Press sync
+
+### Getting changes:
+1. Press CTRL + Shift + P
+2. Type `git fetch`
+    - If it prompts you to choose a repository, select `HPBell_2024-25`
+3. Go to the Source Control tab on the left
+4. Press sync
+
+<br/>
+
+## Misc
 Template command to add git submodules (repositories inside repositories) to a repository:
 ```bash
 git submodule add <Repository URL> <Submodule directory from root>
