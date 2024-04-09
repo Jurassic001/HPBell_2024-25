@@ -31,7 +31,7 @@ i.e. ~~<list item>~~
 2. Run this command to download this repo and open it (Will take 5-10 minutes):
 
     ```
-    git clone --recurse-submodules git://github.com/Jurassic001/HPBell_2024-25 ~/Documents/VSCode/HPBell_2024-25
+    git clone --recurse-submodules https://github.com/Jurassic001/HPBell_2024-25 ~/Documents/VSCode/HPBell_2024-25
     code Documents/VSCode/HPBell_2024-25
     ```
 3. Once in VSCode, open and run `installReqs.py` to install required Python packages
