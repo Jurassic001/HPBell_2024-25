@@ -72,11 +72,6 @@ git submodule add https://github.com/Jurassic001/AVR-2024 AVR\AVR-2024
 ^^^ This is the command I used to add the AVR-2024 repo to this repo (HPBell_2024-25) as a submodule
 -->
 
-<br/> Creating/updating requirements.txt:
-```bash
-pipreqs --force --ignore AVR/AVR-2024
-# Ignores the AVR submodule which has its own requirements.txt files
-```
 <!--
 <br/> The next thing:
 ```
