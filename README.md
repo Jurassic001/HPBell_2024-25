@@ -54,10 +54,8 @@ git clone --recurse-submodules https://github.com/bellflight/AVR-2022 ~/AVR-2022
 
 ### Getting changes:
 1. Press CTRL + Shift + P
-2. Type `git fetch`
+2. Type `git pull`
     - If it prompts you to choose a repository, select `HPBell_2024-25`
-3. Go to the Source Control tab on the left
-4. Press sync
 
 <br/>
 
