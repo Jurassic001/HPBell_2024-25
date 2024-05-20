@@ -70,8 +70,17 @@ git submodule add https://github.com/Jurassic001/AVR-2024 AVR\AVR-2024
 ^^^ This is the command I used to add the AVR-2024 repo to this repo (HPBell_2024-25) as a submodule
 -->
 
+<br/>
+
+Command to remove remote branches from VSCode that've already been deleted on Github:
+```bash
+git fetch --prune
+```
+
 <!--
-<br/> The next thing:
+<br/>
+
+The next thing:
 ```
 placeholder
 ```
