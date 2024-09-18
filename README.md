@@ -4,16 +4,6 @@ This repository contains code for the AVR and Dexi drones, as well as the ground
 <!-- Our team name is Zephyrus, the greek god of western winds -->
 #### Feel free to come to Max or your team captains with any questions/issues you might have
 
-## To do
-<!--
-Surround content with double tilde to cross out
-i.e. ~~<list item>~~
--->
-- ~~Setup team repo with submodules~~
-- ~~Add a "How to Use" section~~
-- Create Dexi drone movement framework
-- Add more things to the to do list
-
 ## Setup
 ### First Timer Setup:
 <!-- This is intended to be a foolproof guide, so excuse the wordiness/overexplaining in some parts -->
@@ -53,9 +43,29 @@ git clone --recurse-submodules https://github.com/bellflight/AVR-2022 ~/AVR-2022
 5. Press sync
 
 ### Getting changes:
-1. Press CTRL + Shift + P
+1. Press <kbd>CTRL</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>
 2. Type `git pull`
     - If it prompts you to choose a repository, select `HPBell_2024-25`
+
+<br/>
+
+## Connecting to drones
+First, install [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). We'll use Putty to connect to the Jetson Nano (commonly referred to as the VMC) on the AVR drone and the ARK Pi6X Flow on the DEXI.
+
+### Connecting to the Jetson on the AVR
+1. Connect to the `Varsity Bells` wifi network
+    - Password is `May152006!`
+2. Open the run dialogue on Windows or your terminal on any other machine
+    - The run dialogue (<kbd>Windows</kbd> + <kbd>R</kbd>) keeps a history of previous commands, so if you value efficiency and automation I highly recommend using it
+3. Run `putty.exe -ssh avr@drone -pw bellavr22`
+4. You are in the command line of the Jetson now. If you don't know what commands to run, google it (i.e. "How to move around in Linux command line) or look at some of the other README's in AVR-2024
+
+### Connecting to the ARK on the DEXI
+1. Connect to the `dexi_002d` wifi network
+    - Password is `droneblocks`
+2. Open the run dialogue on Windows or your terminal on any other machine
+3. Run `putty.exe -ssh dexi@192.168.4.1 -pw dexi`
+4. You are connected!
 
 <br/>
 
