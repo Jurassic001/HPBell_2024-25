@@ -1,3 +1,6 @@
 [submodule "AVR/AVRCode"]
 	path = AVR/AVR-2024
 	url = https://github.com/Jurassic001/AVR-2024
+[submodule "RVR/Arduino-R4-Controller-Web-Interface"]
+	path = RVR/Arduino-R4-Controller-Web-Interface
+	url = https://github.com/Y3t1M/Arduino-R4-Controller-Web-Interface.git
