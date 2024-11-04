@@ -7,9 +7,9 @@ class LedControl
 {
     public:
         LedControl();
-        
+
         void setLeds(uint8_t ledIndexes[], uint8_t ledBrightnessValues[], int ledCount);
-        
+
     private:
 };
 

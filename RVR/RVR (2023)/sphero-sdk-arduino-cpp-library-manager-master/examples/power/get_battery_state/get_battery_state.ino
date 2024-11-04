@@ -5,10 +5,10 @@ static void getBatteryVoltageStateCallback(GetBatteryVoltageStateReturn_t *batte
 void setup() {
     // set up communication with the RVR
     rvr.configUART(&Serial);
-    
+
     // give RVR time to wake up
     delay(2000);
-    
+
     // get the battery voltage state
     rvr.getBatteryVoltageState(getBatteryVoltageStateCallback);
 }

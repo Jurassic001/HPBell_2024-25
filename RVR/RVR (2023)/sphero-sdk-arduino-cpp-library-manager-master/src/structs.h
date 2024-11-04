@@ -7,84 +7,84 @@
 
 enum struct RawMotorModes : uint8_t
 {
-	off, 
-	forward, 
-	reverse, 
+	off,
+	forward,
+	reverse,
 };
 
 enum struct MotorIndexes : uint8_t
 {
-	leftMotorIndex, 
-	rightMotorIndex, 
+	leftMotorIndex,
+	rightMotorIndex,
 };
 
 enum struct ThermalProtectionStatus : uint8_t
 {
-	ok, 
-	warn, 
-	critical, 
+	ok,
+	warn,
+	critical,
 };
 
 enum struct BatteryVoltageReadingTypes : uint8_t
 {
-	calibratedAndFiltered, 
-	calibratedAndUnfiltered, 
-	uncalibratedAndUnfiltered, 
+	calibratedAndFiltered,
+	calibratedAndUnfiltered,
+	uncalibratedAndUnfiltered,
 };
 
 enum struct AmplifierIds : uint8_t
 {
-	leftMotor, 
-	rightMotor, 
+	leftMotor,
+	rightMotor,
 };
 
 enum struct BatteryVoltageStates : uint8_t
 {
-	unknown, 
-	ok, 
-	low, 
-	critical, 
+	unknown,
+	ok,
+	low,
+	critical,
 };
 
 enum struct LEDs : uint8_t
 {
-	rightHeadlightRed = 0, 
-	rightHeadlightGreen = 1, 
-	rightHeadlightBlue = 2, 
-	leftHeadlightRed = 3, 
-	leftHeadlightGreen = 4, 
-	leftHeadlightBlue = 5, 
-	leftStatusIndicationRed = 6, 
-	leftStatusIndicationGreen = 7, 
-	leftStatusIndicationBlue = 8, 
-	rightStatusIndicationRed = 9, 
-	rightStatusIndicationGreen = 10, 
-	rightStatusIndicationBlue = 11, 
-	batteryDoorRearRed = 12, 
-	batteryDoorRearGreen = 13, 
-	batteryDoorRearBlue = 14, 
-	batteryDoorFrontRed = 15, 
-	batteryDoorFrontGreen = 16, 
-	batteryDoorFrontBlue = 17, 
-	powerButtonFrontRed = 18, 
-	powerButtonFrontGreen = 19, 
-	powerButtonFrontBlue = 20, 
-	powerButtonRearRed = 21, 
-	powerButtonRearGreen = 22, 
-	powerButtonRearBlue = 23, 
-	leftBrakelightRed = 24, 
-	leftBrakelightGreen = 25, 
-	leftBrakelightBlue = 26, 
-	rightBrakelightRed = 27, 
-	rightBrakelightGreen = 28, 
-	rightBrakelightBlue = 29, 
-	undercarriageWhite = 30, 
+	rightHeadlightRed = 0,
+	rightHeadlightGreen = 1,
+	rightHeadlightBlue = 2,
+	leftHeadlightRed = 3,
+	leftHeadlightGreen = 4,
+	leftHeadlightBlue = 5,
+	leftStatusIndicationRed = 6,
+	leftStatusIndicationGreen = 7,
+	leftStatusIndicationBlue = 8,
+	rightStatusIndicationRed = 9,
+	rightStatusIndicationGreen = 10,
+	rightStatusIndicationBlue = 11,
+	batteryDoorRearRed = 12,
+	batteryDoorRearGreen = 13,
+	batteryDoorRearBlue = 14,
+	batteryDoorFrontRed = 15,
+	batteryDoorFrontGreen = 16,
+	batteryDoorFrontBlue = 17,
+	powerButtonFrontRed = 18,
+	powerButtonFrontGreen = 19,
+	powerButtonFrontBlue = 20,
+	powerButtonRearRed = 21,
+	powerButtonRearGreen = 22,
+	powerButtonRearBlue = 23,
+	leftBrakelightRed = 24,
+	leftBrakelightGreen = 25,
+	leftBrakelightBlue = 26,
+	rightBrakelightRed = 27,
+	rightBrakelightGreen = 28,
+	rightBrakelightBlue = 29,
+	undercarriageWhite = 30,
 };
 
 enum struct Processors : uint8_t
 {
-	nordic = 0x1, 
-	st = 0x2, 
+	nordic = 0x1,
+	st = 0x2,
 };
 
 // ************************************************************

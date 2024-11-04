@@ -1,17 +1,18 @@
-import keyboard, time, numpy, Geometry3D, matplotlib, sys
-import numpy as np
-sys.path.insert(1, 'Common_Data/')
-HAZARD_LIST = None
-from data import *
-flight_path = Geometry3D.Cylinder(Geometry3D.Point([10, 10, 10]), 20, Geometry3D.Vector(200, 50, 50), 20)
-r = Geometry3D.Renderer(backend='bell', args=[(472, 170, 200), 'avr'])
-#r.add((flight_path, 'red', 1), 0)
+import sys
 
-#for hazard in HAZARD_LIST:
+import Geometry3D
+
+sys.path.insert(1, "Common_Data/")
+HAZARD_LIST = None
+flight_path = Geometry3D.Cylinder(Geometry3D.Point([10, 10, 10]), 20, Geometry3D.Vector(200, 50, 50), 20)
+r = Geometry3D.Renderer(backend="bell", args=[(472, 170, 200), "avr"])
+# r.add((flight_path, 'red', 1), 0)
+
+# for hazard in HAZARD_LIST:
 #    r.add((Geometry3D.Cylinder(Geometry3D.Point(list(hazard[0])), hazard[1], Geometry3D.Vector(list(hazard[2]))), 'green', 1))
-r.add((Geometry3D.Plane(Geometry3D.Point(292, 0, 0), Geometry3D.Point(472, 0, 48), Geometry3D.Point(472, 170, 48)), 'blue', 1))
+r.add((Geometry3D.Plane(Geometry3D.Point(292, 0, 0), Geometry3D.Point(472, 0, 48), Geometry3D.Point(472, 170, 48)), "blue", 1))
 r.show()
-""" 
+"""
 import numpy as np
 import matplotlib.pyplot as plt
 points = [[0, 0, 0], [200, 0, 200], [200, 200, 200]]

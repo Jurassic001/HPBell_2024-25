@@ -13,7 +13,7 @@ This repository contains code for the AVR and Dexi drones, as well as the ground
     - IMPORTANT: When installing make sure to check the "Add to PATH" box.
 4. Install [Python for Windows](https://www.python.org/downloads/windows/)
     - IMPORTANT: During installation check the "Install pip" & "Add Python to enviroment variables" boxes. Leave all other options as default.
-    
+
     <br/>
 
 ### Repository Setup:

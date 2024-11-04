@@ -9,7 +9,7 @@ void setup() {
 
     // set up the callback function for "will sleep" notifications
     rvr.setWillSleepNotifyCallback(willSleepNotifyCallback);
-    
+
     // set up the callback function for "did sleep" notifications
     rvr.setDidSleepNotifyCallback(didSleepNotifyCallback);
 }

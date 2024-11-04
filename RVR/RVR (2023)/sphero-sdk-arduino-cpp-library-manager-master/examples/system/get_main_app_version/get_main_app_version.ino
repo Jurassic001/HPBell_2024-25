@@ -5,10 +5,10 @@ static void getMainApplicationVersionCallback(GetMainApplicationVersionReturn_t 
 void setup() {
     // set up communication with the RVR
     rvr.configUART(&Serial);
-    
+
     // give RVR time to wake up
     delay(2000);
-    
+
     // get the main application version for the Nordic processor
     rvr.getMainApplicationVersion(static_cast<uint8_t>(Processors::nordic), getMainApplicationVersionCallback);
 }
@@ -28,7 +28,7 @@ static void getMainApplicationVersionCallback(GetMainApplicationVersionReturn_t 
     ledGroup |= (1 << static_cast<uint8_t>(LEDs::leftHeadlightRed));
     ledGroup |= (1 << static_cast<uint8_t>(LEDs::leftHeadlightGreen));
     ledGroup |= (1 << static_cast<uint8_t>(LEDs::leftHeadlightBlue));
-    
+
     if (getMainApplicationVersionReturn->minor >= 1)
     {
         // set headlights to yellow if the y value in version x.y.z is 1 or greater

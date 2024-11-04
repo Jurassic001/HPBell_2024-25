@@ -5,7 +5,7 @@ static void batteryVoltageStateChangeNotifyCallback(BatteryVoltageStateChangeNot
 void setup() {
     // set up communication with the RVR
     rvr.configUART(&Serial);
-    
+
     // enable notifications for battery voltage state changes
     rvr.enableBatteryVoltageStateChangeNotify(true, batteryVoltageStateChangeNotifyCallback);
 }

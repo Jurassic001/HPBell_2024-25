@@ -1,6 +1,8 @@
-import cv2, os, time
+import os
 import subprocess
+import time
 
+import cv2
 from bell.avr.mqtt.client import MQTTModule
 from loguru import logger
 
@@ -9,19 +11,18 @@ class ObjectScanner(MQTTModule):
     def __init__(self) -> None:
         super().__init__()
 
-        self.topic_map = {
-            'avr/objscanner/params': self.handle_params
-        }
+        self.topic_map = {"avr/objscanner/params": self.handle_params}
 
-        self.threshold: float = 0.5 # Minimum scanning confidence required to report the target and its location
-        self.scales: list[float] = [.5, .4, .3, .2, .1] # All scales that will be searched on
-        self.scanning_state: int = 0 # Value determines the state of the object scanner. 0 is no scanning, 1 is scan for objects and report relevant data, 2 is automatically move towards detected objects
+        self.threshold: float = 0.5  # Minimum scanning confidence required to report the target and its location
+        self.scales: list[float] = [0.5, 0.4, 0.3, 0.2, 0.1]  # All scales that will be searched on
+        self.scanning_state: int = (
+            0  # Value determines the state of the object scanner. 0 is no scanning, 1 is scan for objects and report relevant data, 2 is automatically move towards detected objects
+        )
 
         logger.info("objscanner initialized")
 
     def handle_params(self, payload: dict):
-        """Handle parameter update messages
-        """
+        """Handle parameter update messages"""
         if "state" in payload:
             self.scanning_state = payload["state"]
             logger.debug(f"objscanner params updated || scanning_state: {self.scanning_state}")
@@ -134,10 +135,10 @@ class ObjectScanner(MQTTModule):
                 logger.debug(f"Best match found: {best_image_name} with confidence {match_confidence:.2f} at scale {best_scale:.2f}")
                 logger.debug(f"Estimated horizontal distance from the target: ({x:.2f}, {y:.2f}) units")
 
-                self.send_message('avr/objscanner/scan_report', {"name": best_image_name, "X": x, "Y":y})
+                self.send_message("avr/objscanner/scan_report", {"name": best_image_name, "X": x, "Y": y})
 
                 if self.scanning_state == 2:
-                    self.send_message('avr/fcm/actions', {'action':  "goto_location_ned", 'payload': {'n': x, 'e': y, 'd': 0, 'heading': 0, 'rel': True}})
+                    self.send_message("avr/fcm/actions", {"action": "goto_location_ned", "payload": {"n": x, "e": y, "d": 0, "heading": 0, "rel": True}})
 
                 time.sleep(1)
 
