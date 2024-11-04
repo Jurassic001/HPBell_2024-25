@@ -4,3 +4,6 @@
 [submodule "RVR/Arduino-R4-Controller-Web-Interface"]
 	path = RVR/Arduino-R4-Controller-Web-Interface
 	url = https://github.com/Y3t1M/Arduino-R4-Controller-Web-Interface.git
+[submodule "RVR/RVR-Movement-Code"]
+	path = RVR/RVR-Movement-Code
+	url = https://github.com/The-OPJ/RVRCode.git
