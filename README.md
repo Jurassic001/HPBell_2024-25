@@ -1,18 +1,18 @@
 # HPBell_2024-25
 
-This repository contains code for the AVR and Dexi drones, as well as the ground RVR vehicle, for the 2024 Bell AVR competition season.
+This repository contains code for the AVR and DEXI drones, as well as the ground RVR vehicle, for the 2024 Bell AVR competition season.
 <!-- Our team name is Zephyrus, the greek god of western winds -->
 #### Feel free to come to Max or your team captains with any questions/issues you might have
 
 ## Setup
 ### First Timer Setup:
-<!-- This is intended to be a foolproof guide, so excuse the wordiness/overexplaining in some parts -->
-1. Create a GitHub acount
+<!-- This is intended to be a foolproof guide, so excuse the wordiness/over-explaining in some parts -->
+1. Create a GitHub account
 2. Install [Git for Windows](https://git-scm.com/download/win)
 3. Install [Visual Studio Code](https://code.visualstudio.com/download)
     - IMPORTANT: When installing make sure to check the "Add to PATH" box.
 4. Install [Python for Windows](https://www.python.org/downloads/windows/)
-    - IMPORTANT: During installation check the "Install pip" & "Add Python to enviroment variables" boxes. Leave all other options as default.
+    - IMPORTANT: During installation check the "Install pip" & "Add Python to environment variables" boxes. Leave all other options as default.
 
     <br/>
 
@@ -27,8 +27,8 @@ This repository contains code for the AVR and Dexi drones, as well as the ground
 3. Once in VSCode, you're ready to start contributing!
     - If you intend to work on the AVR code, your setup process isn't over. Run `code Documents/VSCode/HPBell_2024-25/AVR/AVR-2024` in the command prompt and take a look at the README to see what you need to do.
 <!--
-Do this on the VMC maybe:
-git clone --recurse-submodules https://github.com/bellflight/AVR-2022 ~/AVR-2022
+If you need to clone the repo onto your Jetson, run this command:
+git clone --recurse-submodules https://github.com/Jurassic001/AVR-2024 ~/AVR-2024
 -->
 
 <br/>
@@ -50,15 +50,16 @@ git clone --recurse-submodules https://github.com/bellflight/AVR-2022 ~/AVR-2022
 <br/>
 
 ## Connecting to drones
-First, install [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). We'll use Putty to connect to the Jetson Nano (commonly referred to as the VMC) on the AVR drone and the ARK Pi6X Flow on the DEXI.
+First, install [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). We'll use Putty to connect to the Jetson Nano (commonly referred to as the VMC) on the AVR drone and the ARK on the DEXI.
 
 ### Connecting to the Jetson on the AVR
 1. Connect to the `Varsity Bells` wifi network
     - Password is `May152006!`
+    - Depending on which Jetson is installed (the primary or the backup, the network might be named `Varsity Bells 2`)
 2. Open the run dialogue on Windows or your terminal on any other machine
     - The run dialogue (<kbd>Windows</kbd> + <kbd>R</kbd>) keeps a history of previous commands, so if you value efficiency and automation I highly recommend using it
 3. Run `putty.exe -ssh avr@drone -pw bellavr22`
-4. You are in the command line of the Jetson now. If you don't know what commands to run, google it (i.e. "How to move around in Linux command line) or look at some of the other README's in AVR-2024
+4. You are in the command line of the Jetson now. If you don't know what commands to run, Google it (i.e. "How to move around in Linux command line) or look at some of the other README's in AVR-2024
 
 ### Connecting to the ARK on the DEXI
 1. Connect to the `dexi_002d` wifi network
@@ -82,7 +83,7 @@ git submodule add https://github.com/Jurassic001/AVR-2024 AVR\AVR-2024
 
 <br/>
 
-Command to remove remote branches from VSCode that've already been deleted on Github:
+Command to remove remote branches from VSCode that have already been deleted on Github:
 ```bash
 git fetch --prune
 ```
