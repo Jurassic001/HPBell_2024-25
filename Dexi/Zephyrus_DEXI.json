@@ -1740,8 +1740,7 @@
                 "6a2c09a82ed4bf0b",
                 "3b463b9c6646ef0b",
                 "d58619d0b8b55c42",
-                "118b468b14cdb675",
-                "7d43fe025d61c999"
+                "118b468b14cdb675"
             ]
         ]
     },
@@ -2827,57 +2826,6 @@
         "y": 1400,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "71f7d33d90950d57",
-        "type": "ui_led",
-        "z": "10c20c070b4af084",
-        "order": 1,
-        "group": "aa7f7a1e05ee2d6c",
-        "width": "4",
-        "height": "2",
-        "label": "Test",
-        "labelPlacement": "left",
-        "labelAlignment": "right",
-        "colorForValue": [
-            {
-                "color": "#ff0000",
-                "value": "false",
-                "valueType": "bool"
-            },
-            {
-                "color": "#008000",
-                "value": "true",
-                "valueType": "bool"
-            }
-        ],
-        "allowColorForValueInMessage": false,
-        "shape": "circle",
-        "showGlow": false,
-        "name": "",
-        "x": 1170,
-        "y": 2140,
-        "wires": []
-    },
-    {
-        "id": "7d43fe025d61c999",
-        "type": "function",
-        "z": "10c20c070b4af084",
-        "name": "TestReturnFalse",
-        "func": "return {payload : true};\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 980,
-        "y": 2140,
-        "wires": [
-            [
-                "71f7d33d90950d57"
-            ]
         ]
     },
     {
