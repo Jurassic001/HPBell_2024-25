@@ -1,22 +1,5 @@
 [
     {
-        "id": "c7388c281a81e564",
-        "type": "debug",
-        "z": "10c20c070b4af084",
-        "name": "debug 12",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "'test'",
-        "targetType": "jsonata",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1840,
-        "y": 960,
-        "wires": []
-    }[
-    {
         "id": "10c20c070b4af084",
         "type": "tab",
         "label": "DEXI Main",
@@ -2969,5 +2952,4 @@
         "disabled": false,
         "hidden": false
     }
-]
 ]
