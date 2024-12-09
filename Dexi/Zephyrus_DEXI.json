@@ -1897,16 +1897,6 @@
         ]
     },
     {
-        "id": "f3333c60e1e825de",
-        "type": "comment",
-        "z": "10c20c070b4af084",
-        "name": "features to be added",
-        "info": "add disabling of ir for bridge\nadd laser controllable delay\n\ncreate seperate varibles for laser and IR delay",
-        "x": 190,
-        "y": 2680,
-        "wires": []
-    },
-    {
         "id": "8f36fc4840ffad0f",
         "type": "change",
         "z": "10c20c070b4af084",
@@ -2950,7 +2940,7 @@
                 "8b8f980c784940c2"
             ],
             [
-                "974fa4cd9bbfd0f3"
+                "aacdb9f0411638d3"
             ]
         ]
     },
@@ -3155,8 +3145,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 770,
-        "y": 2620,
+        "x": 910,
+        "y": 2840,
         "wires": [
             []
         ]
@@ -3458,6 +3448,85 @@
         "y": 2540,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "9b32e9b84345bc2e",
+        "type": "ros2-service-call",
+        "z": "10c20c070b4af084",
+        "server": "95bad6327de6acb3",
+        "x": 740,
+        "y": 2840,
+        "wires": [
+            [
+                "974fa4cd9bbfd0f3"
+            ]
+        ]
+    },
+    {
+        "id": "61b59965b5092935",
+        "type": "ros2-service-call",
+        "z": "10c20c070b4af084",
+        "server": "95bad6327de6acb3",
+        "x": 740,
+        "y": 2720,
+        "wires": [
+            [
+                "b7b989e39233cce4"
+            ]
+        ]
+    },
+    {
+        "id": "b7b989e39233cce4",
+        "type": "delay",
+        "z": "10c20c070b4af084",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "250",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 690,
+        "y": 2780,
+        "wires": [
+            [
+                "eba1c50b2ecc1eb1"
+            ]
+        ]
+    },
+    {
+        "id": "aacdb9f0411638d3",
+        "type": "led",
+        "z": "10c20c070b4af084",
+        "name": "WHITE",
+        "color": "white",
+        "x": 580,
+        "y": 2720,
+        "wires": [
+            [
+                "61b59965b5092935"
+            ]
+        ]
+    },
+    {
+        "id": "eba1c50b2ecc1eb1",
+        "type": "led",
+        "z": "10c20c070b4af084",
+        "name": "CYAN",
+        "color": "cyan",
+        "x": 590,
+        "y": 2840,
+        "wires": [
+            [
+                "9b32e9b84345bc2e"
+            ]
         ]
     },
     {
