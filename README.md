@@ -10,7 +10,7 @@ This repository contains code for the AVR and DEXI drones, as well as the ground
 2. Install [Git for Windows](https://git-scm.com/download/win)
 3. Install [Visual Studio Code](https://code.visualstudio.com/download)
     - IMPORTANT: When installing make sure to check the "Add to PATH" box.
-4. Install [Python for Windows](https://www.python.org/downloads/windows/)
+4. Install [Python 3.11 for Windows](https://www.python.org/downloads/release/python-3117/)
     - IMPORTANT: During installation check the "Install pip" & "Add Python to environment variables" boxes. Leave all other options as default.
 
     <br/>
@@ -20,11 +20,11 @@ This repository contains code for the AVR and DEXI drones, as well as the ground
 2. Run this command to download this repo and open it (Will take 5-10 minutes):
 
     ```
-    git clone --recurse-submodules https://github.com/Jurassic001/HPBell_2024-25 Documents/VSCode/HPBell_2024-25
-    code Documents/VSCode/HPBell_2024-25
+    git clone --recurse-submodules https://github.com/Jurassic001/HPBell_2024-25 ~/Documents/VSCode/HPBell_2024-25
+    code ~/Documents/VSCode/HPBell_2024-25
     ```
 3. Once in VSCode, you're ready to start contributing!
-    - If you intend to work on the AVR code, your setup process isn't over. Run `code Documents/VSCode/HPBell_2024-25/AVR/AVR-2024` in the command prompt and take a look at the README to see what you need to do.
+    - If you intend to work on the AVR code, your setup process isn't over. Run `code ~/Documents/VSCode/HPBell_2024-25/AVR/AVR-2024` in the command prompt and take a look at the README to see what you need to do.
 <!--
 If you need to clone the repo onto your Jetson, run this command:
 git clone --recurse-submodules https://github.com/Jurassic001/AVR-2024 ~/AVR-2024
