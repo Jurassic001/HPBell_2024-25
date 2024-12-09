@@ -1,7 +1,6 @@
 # HPBell_2024-25
 
 This repository contains code for the AVR and DEXI drones, as well as the ground RVR vehicle, for the 2024 Bell AVR competition season.
-<!-- Our team name is Zephyrus, the greek god of western winds -->
 #### Feel free to come to Max or your team captains with any questions/issues you might have
 
 ## Setup
